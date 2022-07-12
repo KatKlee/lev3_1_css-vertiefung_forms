@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.registerForm {
+    width: 60%;
+    margin: 60px auto;
+    box-shadow: 0 0 10px 2px grey;
+    border-radius: 6px;
+}
+
+/* ------------------- Header ------------------- */
+
+.registerForm header {
+    background-color: brown;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: white;
+    padding: 30px;
+}
+
+/* Headline */
+.registerForm header h1 {
+    font-weight: 300;
+    font-size: 45px;
+}
+
+/* Subtext */
+.registerForm header p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* ------------------- Main ------------------- */
+
+/* Input Label / Text Styling */
+.registerForm main label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 2px;
+}
+
+/* Input Boxes / Styling */
+.registerForm main input {
+    width: 100%;
+    margin-bottom: 10px;
+    border-style: none;
+    padding: 8px;
+}
+
+/* Sections Input Boxes */
+.registerForm main ol {
+    margin: 30px 30px 0 30px;
+    list-style: none;
+    counter-reset: section;
+}
+
+/* Sections Input Boxes / Headlines */
+.registerForm main ol li {
+    margin-top: 30px;
+    font-weight: 500;
+    color: brown;
+    counter-increment: section;
+}
+
+/* Sections Input Boxes / Counter Styling */
+.registerForm main ol li:before {
+    content: counter(section);
+    margin-right: 14px;
+    margin-left: -44px;
+    background: brown;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-weight: 300;
+}
+
+/* Sections Input Boxes / Background */
+.registerForm main ol li section {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    padding: 25px 25px 15px 25px;
+    margin-top: 5px;
+}
+
+/* ------------------- Footer ------------------- */
+
+/* Footer / General Styles */
+.registerForm footer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: brown;
+    padding: 8px 35px;
+    color: white;
+    border-style: none;
+    border-radius: 20px;
+}
+
+/* Submit Button / Hover */
+input[type="submit"]:hover {
+    background-color: rgb(114, 29, 29);
+}
+
+/* Agree Checkbox / Text Styling */
+footer div label {
+    font-weight: 400;
+    font-size: 12px;
+    color: grey;
+    margin-left: 10px;
+}

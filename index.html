@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFlow Übung lev3_1: CSS-Vertiefung / forms</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <form action="">
+        <!-- Register Form -->
+        <div class="registerForm">
+            <!---------------------------- Header ---------------------------->
+            <header>
+                <!-- Headline -->
+                <h1>Sign Up Now!</h1>
+                <!-- Subtext -->
+                <p>Sign up and tell us what you think of the site!</p>
+            </header>
+            <!---------------------------- Main ---------------------------->
+            <main>
+                <ol>
+                    <!-- Input Boxes -->
+                    <li>Name & Address
+                        <section>
+                            <label for="fullname">Full Name</label>
+                            <input type="text" name="fullname" id="fullname" required>
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address">
+                        </section>
+                    </li>
+                    <li>E-Mail & Phone
+                        <section>
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="email" id="email">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="number" name="phonenumber" id="phonenumber">
+                        </section>
+                    </li>
+                    <li>Password
+                        <section>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                            <label for="confirm">Confirm Password</label>
+                            <input type="confirm" name="confirm" id="confirm" required>
+                        </section>
+                    </li>
+                </ol>
+            </main>
+
+            <!---------------------------- Footer ---------------------------->
+            <footer>
+                <!-- Submit Button -->
+                <input type="submit" value="Submit">
+                <!-- Agree Checkbox -->
+                <div>
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <label for="agree">I agree to your Terms of use.</label>
+                </div>
+            </footer>
+        
+        </div>
+    </form>
+</body>
+
+</html>
